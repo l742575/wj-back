@@ -59,6 +59,7 @@ public class LoginController {
             result.setCode(200);
             result.setMessage("成功");
         }catch (AuthenticationException e)  {
+            result.setCode(1001);
             result.setMessage("用户名或密码错误");
 
         }
